@@ -2,116 +2,270 @@
 @import "./fonts.css";
 @import "./utils.css";
 
-.test {
-    color: yellow !important;
+p{
+  font-size: small;
 }
 
-.test {
-    color: red !important;
-}
-
-p.bluep {
-    font-size: 16px;
-    line-height: 26px;
-    color: #1F3F68;
-}
-
-h1.blueh1{
-    font-size: 64px;
-    color: #1F3F68;
-}
-
-h2.contacth2{
-    font-weight: 500;
-    font-size: 44px;
-    text-align: center;
-}
-
-h3.podzaga{
-    font-size: 36px;
-    text-align: center;
-}
-
-h4.minizaga {
-    font-size: 20px;
-    line-height: 30px;
-    color: #1F3F68;
-}
-
-input.class, textarea.class{
-    border: 1px solid #356EAD;
-    box-sizing: border-box;
-    border-radius: 10px;
-    opacity: 0.4;
-}
-
-button.btclass{
-    background: #5A98D0;
-    background-image: linear-gradient(to right, #4776E6 0%, #8E54E9  51%, #4776E6  100%);
-    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
-    border-radius: 10px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    margin: 10px;
-    padding: 15px 45px;
-    border-radius: 10px;
-    display: block;
-    background-size: 200% auto;
-    border: none
-}
-
-button.btclass:hover {
-    background-position: right center; /* change the direction of the change here */
-    color: #fff;
-    text-decoration: none;
-    cursor: pointer;
-  }
- 
-
-body.xp{
-    background-image: url("/src//assets/img/back.jpg");
-}
-
-ul.breadcrumbs {
-    margin: 0;
+ul.header-list, ul.header-contact-list{
+  margin: 0;
     padding: 0;
     list-style: none;
     text-align: center;
     box-sizing: border-box;
-    width: 40%;
-    background-image: linear-gradient(to top, #4776E6 0%, #ffffff  120%);
-  }
-  
-  li.breadcrumbs-item{
-    background-image: linear-gradient(to top, #4776E6 0%, #ffffff  120%);
+    display: inline-block;
+}
+
+li.header-list-item, li.header-contact-list-item{
+  display: inline-block;
+    vertical-align: top;
+}
+
+li.header-contact-list-item::before{
+  /* for icons*/
+}
+
+label{
+  font-size: small;
+}
+
+div.consultation-inputs label{
+  font-size: small;
+  display: block;
+}
+
+div.consultation-inputs{
+  float:left;
+  margin-right: 20px;
+}
+
+input.consultation{
+  border: none;
+  display: block;
+  border-bottom: 1px solid rgb(185, 185, 185);
+}
+
+button.get-consultation{
+  width: 150px;
+  height: 35px;
+}
+
+div.lang-stack, div.development-steps{
+  display: inline-block;
+  padding: auto;
+}
+
+ul.web-stack-list, ul.mobile-stack-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 500px;
+}
+
+li.web-stack-item, li.mobile-stack-item{
     display: inline-block;
     vertical-align: top;
-    padding: 5px;
-    margin-right: 5px;
-    padding-right: 15px;
-    border-style: solid;
-    border-width: 0px 3px 0px 0px;
-    border-color: transparent black transparent transparent;
-    border-radius: 20px;
-  }
+}
 
-  li.breadcrumbs-item:hover{
-    background-image: linear-gradient(to top, #144fd9 0%, #ffffff  120%);
-  }
-  
-  a.breadcrumbs-link {
-    color: #0b56ea;
-    text-decoration: none;
-  }
-  
-  a.breadcrumbs-link:not(span):hover {
-    text-decoration: underline;
-  }
-  
-  a.breadcrumbs-link.current {
-    color: #333;
-  }
+li.web-stack-item::after, li.mobile-stack-item::after{
+  content: " /";
+}
+
+
+ul.dev-steps-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+}
+
+li.dev-steps-item::after{
+  content: " >";
+}
+
+div.dev-industries h4{
+  width: 250px;
+}
+
+ul.industries-list{
+  list-style: none;
+  height: 100px;
+  display: flex;
+  flex-direction: column; 
+  flex-wrap: wrap
+}
+
+li.industries-item{
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+li.industries-item::before{
+ /* for icons */
+}
+
+div.project-nav {
+  overflow: hidden;
+}
+
+div.project-nav a {
+  float: left;
+  text-align: center;
+  margin: 10px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+div.project-nav a.active{
+  border-bottom: #0b56ea 2px solid;
+}
+
+ul.project-stack{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 500px;
+}
+
+li.project-stack-item{
+  display: inline-block;
+  vertical-align: top;
+}
+
+li.project-stack-item::after{
+  content: " /";
+}
+
+div.project-info span.place::before, div.project-info span.orientation::before{
+ /* for icon */
+}
+
+div.project-stats p{
+  display: block;
+}
+ div.project-stats label{
+  font-size: small;
+display: inline-block;
+}
+
+div.discussion, form.discuss{
+  display: inline-block;
+}
+
+div.discussion{
+  width: 40%;
+}
+
+div.discuss-inputs{
+  float:left;
+  margin-right: 20px;
+}
+
+div.discuss-inputs label{
+  font-size: small;
+  display: block;
+}
+
+button.discuss{
+  display: block;
+}
+
+div.column-stages {
+  float: left;
+  width: 30%;
+}
+
+div.row-stages:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+div.column-stages:first-child{
+  margin-right: 20%;
+}
+
+div.column-stages h5::before{
+  /* for icons */
+}
+
+div.teaminfo{
+  width: 50%;
+}
+
+div.team-stats, div.project-stats{
+  display: inline-block;
+  margin-right: 10%;
+}
+
+form.book-contacts{
+  width: 400px;
+  margin: 20px;
+}
+
+div.book-inputs label{
+  font-size: small;
+  display: block;
+}
+
+div.book-inputs{
+  float:left;
+  margin-right: 20px;
+}
+
+div.book-inputs input{
+  border: none;
+  display: inline-block;
+  border-bottom: 1px solid rgb(185, 185, 185);
+}
+
+#mail{
+  position: inherit;
+ width: 355px;
+}
+
+button.get-book{
+  margin-left: 185px;
+  display: block;
+}
+
+div.column-questions {
+  float: left;
+  width: 30%;
+}
+
+div.row-questions:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+div.column-questions:first-child{
+  margin-right: 20%;
+}
+
+div.column-questions h5::after{
+  /* for icons */
+}
+
+div.footer-elem{
+
+}
+
+div.footer-elem{
+  display: inline-block;
+  margin-right: 10%;
+}
+
+div.foot-logo{
+  text-align: center;
+}
+
+div.foot-logo p::before{
+  /* for icon */
+}
