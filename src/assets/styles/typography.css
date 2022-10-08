@@ -1,0 +1,73 @@
+@import "./fonts.css";
+
+.title-1-bold{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    letter-spacing: 0.326451px;
+}
+
+.subhead-medium{
+    font-family: 'SF Pro Text', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.154px;
+}
+
+.subtitle-2-bold{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.38px;
+}
+
+.text-medium{
+    font-family: 'SF Pro Text', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+}
+
+.caption-1-medium{
+    font-family: 'SF Pro Text',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.078px;
+}
+
+.subhead-semibold{
+    font-family: 'SF Pro Text',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.154px;
+}
+
+.caption-1-regular{
+    font-family: 'SF Pro Text', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.078px;
+}
+
+.title-3-semibold{
+    font-family: 'SF Pro Text',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: -0.408px;
+}

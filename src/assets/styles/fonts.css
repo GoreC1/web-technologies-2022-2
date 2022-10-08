@@ -70,6 +70,34 @@
     font-weight: 100;
 }
 
+@font-face {
+    font-family: "SF Pro";
+    src: local('SF Pro'), local('SF Pro-Bold'), local('SF Pro Bold'),
+         url("/static/fonts/SF-Pro-Display-Bold.otf") format("opentype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "SF Pro";
+    src: local('SF Pro'), local('SF Pro-Medium'), local('SF Pro Medium'),
+         url("/static/fonts/SF-Pro-Display-Medium.otf") format("opentype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "SF Pro";
+    src: local('SF Pro'), local('SF Pro-Regular'), local('SF Pro Regular'),
+         url("/static/fonts/SF-Pro-Display-Regular.otf") format("opentype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "SF Pro";
+    src: local('SF Pro'), local('SF Pro-SemiBold'), local('SF Pro SemiBold'),
+         url("/static/fonts/SF-Pro-Display-Semibold.otf") format("opentype");
+    font-weight: 600;
+}
+
 
 
 
