@@ -108,13 +108,24 @@
     letter-spacing: 0.38px;
 }
 }
+
+@media screen and (min-width: 425px) and (max-width: 768px){
+    .title-3-regular{
+        font-family: 'SF Pro Text',sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: -0.408px;
+    }
+}
 @media screen and (max-width: 425px) {
       
     .title-1-bold{
         font-family: 'Inter', sans-serif;
         font-style: normal;
         font-weight: 700;
-        font-size: 18px;
+        font-size: 15px;
         line-height: 24px;
         letter-spacing: 0.326451px;
       }
@@ -141,7 +152,7 @@
         font-family: 'Inter', sans-serif;
         font-style: normal;
         font-weight: 700;
-        font-size: 16px;
+        font-size: 11px;
         line-height: 20px;
         letter-spacing: 0.38px;
       }
@@ -150,7 +161,7 @@
         font-family: 'SF Pro Text',sans-serif;
         font-style: normal;
         font-weight: 600;
-        font-size: 10px;
+        font-size: 8px;
         line-height: 12px;
         letter-spacing: 0.38px;
       }

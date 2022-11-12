@@ -16,7 +16,125 @@
       margin-bottom: 2px;
       margin-left: 10px;
     }
+
+    .container-proud-projects{
+      grid-template-areas: 
+      "proud-header proud-header proud-header proud-header proud-header proud-header"
+      "proud-info proud-info proud-info proud-info proud-info  proud-info"
+      "proud-list proud-list proud-list proud-list proud-list proud-list"
+      "proud-photo proud-photo proud-photo proud-photo proud-photo proud-photo"
+      "proud-name proud-name proud-name proud-name proud-name proud-name"
+      "proud-desc proud-desc proud-desc proud-desc proud-desc proud-desc"
+      "proud-stack proud-stack proud-stack proud-stack proud-stack proud-stack"
+      "proud-ex-info proud-ex-info proud-ex-info . . ."
+      "proud-numbers proud-numbers proud-numbers . . ."
+      "proud-download proud-download proud-download proud-download proud-download proud-download"
+      ". proud-more proud-more proud-more proud-more .";
+     }
+
+     .discuss-form-field{
+      display: flex;
+      flex-direction: column;
+      flex: 100%;
+    }
+
+    .discuss-form{
+      justify-content: center;
+    }
+     
+     .discuss-container{
+      grid-template-columns: 1fr 10%;
+      grid-template-areas: 
+      "disc-title ."
+      "disc-desc . "
+      "disc-form .";
+  }
+
+     .proud-projects-more{
+      grid-area: proud-more;
+      width: 207px;
+      height: 25px;
+      background-color: #2D66EE;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .proud-projects-photo > img{
+      width: 270px;
+    }
+    
+    .team-container{
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 10%;
+      grid-template-areas: 
+      "team-title ."
+      "team-desc ."
+      "team-photo ."
+      "team-nums ."
+      "team-info .";
+      row-gap: 20px;
+    }
+
+    #team-photo-img{
+      width: 300px;
+      z-index: 2;
+    }
+
+    .dev-stages-container{
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 10%;
+      grid-template-areas: 
+      "dev-title ."
+      "dev-analysis ."
+      "dev-test ."
+      "dev-design . "
+      "dev-launch ."
+      "dev-dev . "
+      "dev-sup .";
+      row-gap: 10px;
+    }
+
+    .book-container{
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      grid-template-areas: 
+      "book-title"
+      "book-photo"
+      "book-form ";
+    }
+
+    .book-form-field{
+      flex: 100%;
+    }
+
+    .book-form{
+      justify-content: center;
+    }
+
+    .book-photo > img{
+      width: 140px;
+      height: 200px;
+    }
+
+    .book-form-btn{
+      height: 25px;
+      width: 150px;
+    }
   
+    .faq-container{
+      display: grid;
+      grid-template-columns: repeat(1,minmax(0,1fr)) 10%;
+      grid-template-areas: 
+      "faq-title ."
+      "quest3 ." 
+      "quest1 ."
+      "quest2 ."
+      "quest4 .";
+      row-gap: 30px;
+      margin-bottom: 50px;
+    }
+
     /* can do only hover with css */
     .header-menu:hover > .menu-panel{
       display: flex;
