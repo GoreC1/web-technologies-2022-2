@@ -79,6 +79,39 @@
       height: 400px;
     }
 
+    .animation {
+      padding-top: 200px;
+      grid-area: anim;
+      margin:0 auto;
+      overflow: hidden;
+      height: 500px;
+      width: fit-content;
+      transform: rotate(-15deg);
+      z-index: -1;
+    }
+
+    .animation img:nth-child(1) {
+      position: relative;
+      width: 142.5px;
+      animation: move 20s infinite; 
+    }
+    
+    .animation img:nth-child(2) {
+      position: relative;
+      width: 142.5px;
+      animation: move_reverse 20s infinite; 
+    }
+
+    .intro-container{
+      display: grid;
+      grid-template-columns: repeat(2,minmax(0,1fr)) 10%;
+      grid-template-areas: 
+      "intro anim ."
+      "intro-form anim .";
+      margin-bottom: 30px;
+    }
+    
+
     .faq-container{
       display: grid;
       grid-template-columns: repeat(1,minmax(0,1fr)) 10%;

@@ -5,6 +5,7 @@
 @import "../../sprite.svg";
 @import "./phone-style.css";
 @import "./tablet-style.css";
+@import "./anim.css";
 
 body:not(footer){
   background-color: #F2F4F7;
@@ -247,6 +248,37 @@ li.header-list-item, li.header-contact-list-item{
   flex-direction: row;
   align-items: center;
   gap: 12px;
+}
+
+.intro-container{
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr)) 10%;
+  grid-template-areas: 
+  "intro anim ."
+  "intro-form anim .";
+  margin-bottom: 30px;
+}
+
+.animation {
+  grid-area: anim;
+  margin:0 auto;
+  overflow: hidden;
+  height: 500px;
+  width: fit-content;
+  transform: rotate(-15deg);
+  z-index: -1;
+}
+
+.animation img:nth-child(1) {
+  position: relative;
+  width: 242.5px;
+  animation: move 20s infinite; 
+}
+
+.animation img:nth-child(2) {
+  position: relative;
+  width: 242.5px;
+  animation: move_reverse 20s infinite; 
 }
 
 .dev-cycle-mobile-list-container, .dev-cycle-web-list-container{
@@ -721,26 +753,25 @@ div.dev-cycle-links-list-item{
   font-weight: 600;
 }
 
-.introduction-container{
-  width: 41%;
-  padding-top: 80px;
+.introduction{
+  padding-top: 40px;
+  grid-area: intro;
 }
 
 .introduction-details{
-  padding-top: 30px;
+  padding-top: 15px;
 }
 
 
 
 .consultation-form{
-  margin-left: 10%;
-  width: fit-content;
-  margin-top: 60px;
+  grid-area: intro-form;
+  width: 100%;
+  margin-top: 20px;
   background: #FFFFFF;
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.08), 0px 0px 24px rgba(0, 0, 0, 0.16);
   border-radius: 12px;
   height: 190px;
-  margin-bottom: 100px;
 }
 
 .consultation-form-text{
@@ -752,6 +783,7 @@ div.dev-cycle-links-list-item{
   display: flex;
   flex-direction: row;
   margin-left: 20px;
+
 }
 
 .consultation-form-inputs-phone, .consultation-form-inputs-name{
@@ -772,6 +804,8 @@ div.dev-cycle-links-list-item{
 .consultation-form-inputs-phone-input{
   border:none;
   width: 224px;
+  padding-bottom: 3px;
+  margin-bottom: 10px;
 }
 
 .consultation-form-inputs label{

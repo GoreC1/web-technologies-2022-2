@@ -104,6 +104,58 @@
       "book-form ";
     }
 
+    .introduction{
+      padding-top: 20px;
+      grid-area: intro;
+    }
+
+    .intro-container{
+      row-gap: 15px;
+      display: grid;
+      grid-template-columns: repeat(1,minmax(0,1fr)) 10%;
+      grid-template-areas: 
+      "intro  ."
+      "anim ."
+      "intro-form .";
+      margin-bottom: 30px;
+    }
+    
+    .animation {
+      grid-area: anim;
+      margin:0 auto;
+      overflow: hidden;
+      height: 250px;
+      width: fit-content;
+      transform: rotate(-15deg);
+      z-index: -1;
+    }
+
+    .consultation-form-inputs{
+      display: flex;
+      flex-direction: row;
+      margin-left: 20px;
+    }
+
+    .consultation-form-inputs-phone, .consultation-form-inputs-name-input{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      width: 204px;
+      margin-right: 30px;
+    }
+
+    .animation img:nth-child(1) {
+      position: relative;
+      width: 137.5px;
+      animation: move 20s infinite; 
+    }
+    
+    .animation img:nth-child(2) {
+      position: relative;
+      width: 137.5px;
+      animation: move_reverse 20s infinite; 
+    }
+
     .book-form-field{
       flex: 100%;
     }

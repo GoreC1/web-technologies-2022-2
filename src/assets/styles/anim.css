@@ -1,0 +1,40 @@
+.animation img:nth-child(1) {
+  position: relative;
+  width: 242.5px;
+  animation: move 20s infinite; 
+}
+
+.animation img:nth-child(2) {
+  position: relative;
+  width: 242.5px;
+  animation: move_reverse 20s infinite; 
+}
+
+@keyframes move {
+  0%{
+    top:0;
+  }
+
+  50%{
+    top:-650px;
+  }
+
+  100%{
+    top: 0;
+  }
+
+}
+
+@keyframes move_reverse {
+  0%{
+    top:-550px;
+  }
+
+  50%{
+    top:0px;
+  }
+
+  100%{
+    top: -550px;
+  }
+}
