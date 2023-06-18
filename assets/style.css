@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  h2,
+  h3 {
+    margin-top: 20px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  form input[type="text"],
+  form select,
+  form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  form input[type="submit"] {
+    background-color: rgb(255, 208, 0);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: rgb(190, 166, 10);
+  }
+  
+  .product,
+  .review {
+    border: 2px solid gray;
+    margin-bottom: 5px;
+  }
